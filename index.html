@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aleksa Keković</title>
+<meta name="description" content="Aleksa Keković, software engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=15">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro');</script>
+<style>html,body{height:100%;overflow:hidden}</style>
+</head>
+<body>
+
+<main>
+<section class="chapter chapter--sky" id="hero" style="--h:100vh">
+  <div class="stage">
+    <div class="clouds" aria-hidden="true">
+      <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span>
+    </div>
+
+    <div class="hero-copy">
+      <h1><span class="narrow">Hi, I'm</span> <button class="name-jump" type="button" aria-label="Aleksa">Aleksa.</button></h1>
+      <p class="lede">I build software, I love adrenaline, and I have a habit of following my curiosity. Occasionally straight out of a plane.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script>
+/* the first screen on its own: clouds and copy ease in, the name bounces when clicked */
+(() => {
+  const root = document.documentElement, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (root.classList.contains('intro')) {
+    const copy = ['.hero-copy h1', '.hero-copy .lede'];
+    gsap.timeline({ defaults: { ease: 'power3.out' }, onComplete: () => { root.classList.remove('intro'); gsap.set(copy, { clearProps: 'all' }); gsap.set('.cloud', { clearProps: 'x,opacity,visibility' }); } })
+      .fromTo('.cloud.c1, .cloud.c3', { autoAlpha: 0, x: -80 }, { autoAlpha: 0.92, x: 0, duration: 1.1, stagger: 0.12 }, 0)
+      .fromTo('.cloud.c2, .cloud.c4', { autoAlpha: 0, x: 80 }, { autoAlpha: 0.92, x: 0, duration: 1.1, stagger: 0.12 }, 0.05)
+      .fromTo('.hero-copy h1', { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.8 }, 0.25)
+      .fromTo('.hero-copy .lede', { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.7 }, 0.5);
+  }
+  const name = document.querySelector('.name-jump');
+  name.addEventListener('click', () => {
+    if (reduce) return;
+    gsap.killTweensOf(name);
+    gsap.timeline()
+      .to(name, { scaleY: 0.82, scaleX: 1.06, duration: 0.1, ease: 'power2.in' })
+      .to(name, { y: -0.16 * name.offsetHeight, scaleY: 1.08, scaleX: 0.96, duration: 0.24, ease: 'power2.out' })
+      .to(name, { y: 0, scaleY: 0.9, scaleX: 1.04, duration: 0.26, ease: 'power2.in' })
+      .to(name, { scaleY: 1, scaleX: 1, duration: 0.3, ease: 'elastic.out(1, 0.45)' });
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aleksa Keković, a story in altitude</title>
+<meta name="description" content="Aleksa Keković, software engineer. A short scroll story: a jump, a club, the craft, and what comes next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css?v=15">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro');</script>
+</head>
+<body>
+
+<!-- HUD, fixed -->
+<header class="hud" aria-hidden="true">
+  <div class="hud-name">Aleksa Keković</div>
+  <div class="hud-alt"><span class="hud-k">ALT</span><span id="alt">4,000</span><span class="hud-k">M</span></div>
+  <div class="hud-chapter"><span id="chapter-num">01</span><span id="chapter-name">the jump</span></div>
+  <div class="hud-progress"><i id="progress"></i></div>
+</header>
+
+<main>
+
+<!-- 01 · THE JUMP -->
+<section class="chapter chapter--sky" id="hero" data-name="the jump" data-hud="dark" style="--h:360vh">
+  <div class="stage">
+    <div class="clouds" aria-hidden="true">
+      <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span>
+    </div>
+
+    <div class="hero-copy">
+      <h1><span class="narrow">Hi, I'm</span> <button class="name-jump" type="button" aria-label="Aleksa">Aleksa.</button></h1>
+      <p class="lede">I build software, I love adrenaline, and I have a habit of following my curiosity. Occasionally straight out of a plane.</p>
+      <p class="scroll-hint">scroll to jump</p>
+    </div>
+
+    <figure class="jump-window">
+      <div class="win jump-win">
+        <div class="win-bar">
+          <b></b><span>jump.mov</span>
+          <div class="win-btns">
+            <button class="wb wb-min" type="button" aria-label="Minimize"><i></i></button>
+            <button class="wb wb-max" type="button" aria-label="Maximize"><i></i></button>
+            <button class="wb wb-close" type="button" aria-label="Close"><i></i></button>
+          </div>
+        </div>
+        <video class="jump-video" src="../assets/parachute.mp4" muted loop playsinline preload="metadata"></video>
+        <i class="rz" data-dir="n"></i><i class="rz" data-dir="s"></i><i class="rz" data-dir="e"></i><i class="rz" data-dir="w"></i>
+        <i class="rz" data-dir="ne"></i><i class="rz" data-dir="nw"></i><i class="rz" data-dir="se"></i><i class="rz" data-dir="sw"></i>
+      </div>
+    </figure>
+    <div class="taskbar" aria-hidden="true"><button class="win-task" type="button" aria-hidden="false"><i></i>jump.mov</button></div>
+    <button class="win-icon" type="button" hidden><i></i><span>jump.mov</span></button>
+
+    <p class="jump-caption"><span class="wide">4,000 m up.</span> Curiosity is louder than fear.</p>
+
+    <figure class="polaroid">
+      <div class="pola-photo">
+        <img src="../assets/kenya-clean.jpg" alt="Aleksa jumping with Maasai warriors in Kenya">
+        <span class="pstamp">Kenya 2023</span>
+        <svg class="point" viewBox="0 0 90 130" aria-hidden="true">
+          <path class="halo" d="M34 34 Q 52 30 65 48"/><path class="line" d="M34 34 Q 52 30 65 48"/>
+          <path class="halo" d="M60 46.5 L 65.5 49 L 63.5 43.5"/><path class="line" d="M60 46.5 L 65.5 49 L 63.5 43.5"/>
+          <text x="10" y="31">that's me</text>
+        </svg>
+      </div>
+      <figcaption>Curious. I like that.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 02 · THE STUDIES -->
+<section class="chapter chapter--navy" id="study" data-name="the studies" style="--h:320vh">
+  <div class="stage">
+    <div class="study-grid">
+      <div class="study-copy">
+        <p class="study-tag">So I enrolled.</p>
+        <p class="study-line l1">
+          <span class="ln"><span class="tx wide">Information<i class="strike"></i></span></span>
+          <span class="ln"><span class="tx wide">Systems<i class="strike"></i></span></span>
+          <span class="ln"><span class="tx">and<i class="strike"></i></span></span>
+          <span class="ln"><span class="tx">Technologies.<i class="strike"></i></span></span>
+        </p>
+        <p class="study-line l2">That wasn't <span class="wide">enough.</span></p>
+      </div>
+
+      <div class="index win">
+        <div class="win-bar"><b></b><span>Student ID</span></div>
+        <div class="index-body">
+          <div class="index-photo"><img src="../assets/aleksa.jpg" alt="Aleksa Keković"></div>
+          <dl class="index-rows">
+            <dt>Name</dt><dd>Aleksa Keković</dd>
+            <dt>University</dt><dd>University of Belgrade</dd>
+            <dt>Faculty</dt><dd>Faculty of Organizational Sciences</dd>
+            <dt>Programme</dt><dd>Information Systems and Technologies</dd>
+            <dt>Year</dt><dd>2021</dd>
+          </dl>
+          <div class="stamp">Enrolled</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · THE CLUB -->
+<section class="chapter chapter--red" id="club" data-name="the club" style="--h:480vh">
+  <div class="stage">
+    <div class="red-shards" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+    <img class="ball" src="../assets/spalding.png" alt="" aria-hidden="true" draggable="false">
+
+    <div class="club-lines">
+      <p class="club-line" data-i="0">I've supported <span class="wide">Crvena zvezda</span><br>my whole life.</p>
+      <p class="club-line" data-i="1">Basketball isn't a hobby.<br>It's <span class="wide">the</span> passion.</p>
+      <p class="club-line" data-i="2">So when the club needed a new Fan Store,<br>I got to rebuild it. <span class="wide">All of it.</span></p>
+    </div>
+
+    <div class="deck">
+      <figure class="card" data-i="0"><div class="card-drag"><div class="card-inner"><figcaption><b>01</b><span>filters and catalogue</span></figcaption><img src="../assets/kkcz1.jpg" alt="Fan Store, shop with filters" draggable="false"></div></div></figure>
+      <figure class="card" data-i="1"><div class="card-drag"><div class="card-inner"><figcaption><b>02</b><span>landing and campaigns</span></figcaption><img src="../assets/kkcz3.jpg" alt="Fan Store, homepage hero" draggable="false"></div></div></figure>
+      <figure class="card" data-i="2"><div class="card-drag"><div class="card-inner"><figcaption><b>03</b><span>editorial sections</span></figcaption><img src="../assets/kkcz2.jpg" alt="Fan Store, support the club section" draggable="false"></div></div></figure>
+    </div>
+    <p class="deck-hint">hover to look closer, drag to rearrange</p>
+  </div>
+</section>
+
+<!-- 04 · THE CRAFT -->
+<section class="chapter chapter--ink" id="craft" data-name="the craft" style="--h:1400vh">
+  <div class="stage">
+    <p class="craft-intro">
+      <span class="ci-main">
+        <span class="ln"><span class="tx wide">Software engineering<i class="strike"></i></span></span>
+        <span class="ln"><span class="tx">became the job.<i class="strike"></i></span></span>
+      </span>
+      <span class="ci-sub">What it looked like. No words needed.</span>
+      <span class="co-l2">That wasn't <span class="wide">enough.</span></span>
+      <span class="co-l3">I wanted to build something <span class="wide">meaningful.</span></span>
+    </p>
+
+    <ol class="rail" aria-label="Craft scenes">
+      <li data-i="0"><button type="button">expenses into ERP</button></li>
+      <li data-i="1"><button type="button">SDKs</button></li>
+      <li data-i="2"><button type="button">pipelines</button></li>
+      <li data-i="3"><button type="button">infrastructure</button></li>
+      <li data-i="4"><button type="button">API explorer</button></li>
+    </ol>
+
+    <div class="fit" id="craft-fit">
+
+      <!-- A · expenses into ERP -->
+      <div class="scene" id="sc-expense">
+        <div class="phone">
+          <div class="app-bar">Expenses</div>
+          <div class="receipt">
+            <div class="r-shop">CAFÉ · BELGRADE</div>
+            <div class="r-line"><span>2x espresso</span><span>3.20</span></div>
+            <div class="r-line"><span>client lunch</span><span>38.90</span></div>
+            <div class="r-total"><span>TOTAL</span><span>42.10 EUR</span></div>
+            <div class="r-cam">captured from camera</div>
+          </div>
+          <div class="app-cta">Submit</div>
+        </div>
+
+        <div class="monitor win">
+          <div class="win-bar"><b></b><span>ERP · General ledger</span></div>
+          <table class="erp">
+            <thead><tr><th>#</th><th>account</th><th>memo</th><th>amount</th><th>status</th></tr></thead>
+            <tbody>
+              <tr><td>1041</td><td>6210 travel</td><td>taxi · airport</td><td>27.00</td><td class="ok">posted</td></tr>
+              <tr><td>1042</td><td>6250 software</td><td>saas · monthly</td><td>119.00</td><td class="ok">posted</td></tr>
+              <tr><td>1043</td><td>6230 meals</td><td>team dinner</td><td>212.40</td><td class="ok">posted</td></tr>
+              <tr class="new"><td>1044</td><td>6230 meals</td><td>client lunch</td><td>42.10</td><td class="ok">synced</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="morph"><span>1044</span><span>6230 meals</span><span>client lunch</span><span>42.10</span><i>synced</i></div>
+      </div>
+
+      <!-- B · SDKs -->
+      <div class="scene" id="sc-sdk">
+        <div class="pkg pkg-back">
+          <svg viewBox="0 0 120 132" aria-hidden="true">
+            <rect x="22" y="30" width="76" height="20" rx="9" fill="#07090f" stroke="#0a0a0a" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <div class="pkg pkg-flap">
+          <svg viewBox="0 0 120 132" aria-hidden="true">
+            <g class="bp-flap">
+              <path d="M46 8 Q60 -8 74 8" fill="none" stroke="#0a0a0a" stroke-width="12" stroke-linecap="round"/>
+              <path d="M46 8 Q60 -8 74 8" fill="none" stroke="#2c3550" stroke-width="6" stroke-linecap="round"/>
+              <path d="M18 58 Q18 8 60 8 Q102 8 102 58 Q60 66 18 58 Z" fill="#2c3550" stroke="#0a0a0a" stroke-width="4"/>
+              <rect x="52" y="30" width="16" height="24" rx="3" fill="#232c44" stroke="#0a0a0a" stroke-width="3"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="ops">
+          <span class="op" style="left:110px;top:60px">createExpense()</span>
+          <span class="op" style="left:330px;top:34px">createPayment()</span>
+          <span class="op" style="left:560px;top:52px">listReports()</span>
+          <span class="op" style="left:750px;top:76px">getBalance()</span>
+          <span class="op" style="left:160px;top:140px">auth + tokens</span>
+          <span class="op" style="left:400px;top:126px">connections</span>
+          <span class="op" style="left:600px;top:140px">retries + errors</span>
+          <span class="op" style="left:780px;top:160px">webhooks</span>
+        </div>
+
+        <div class="pkg pkg-front">
+          <svg viewBox="0 0 120 132" aria-hidden="true">
+            <path d="M102 56 Q118 62 112 94" fill="none" stroke="#0a0a0a" stroke-width="12" stroke-linecap="round"/>
+            <path d="M102 56 Q118 62 112 94" fill="none" stroke="#2c3550" stroke-width="6" stroke-linecap="round"/>
+            <path d="M18 54 Q18 50 24 50 H96 Q102 50 102 54 V108 Q102 122 88 122 H32 Q18 122 18 108 Z" fill="#1d2433" stroke="#0a0a0a" stroke-width="4"/>
+            <rect x="52" y="54" width="16" height="10" rx="2" fill="#8b96b5" stroke="#0a0a0a" stroke-width="2.5"/>
+            <rect x="36" y="74" width="48" height="32" rx="8" fill="#232c44" stroke="#0a0a0a" stroke-width="4"/>
+            <path d="M44 82 H76" stroke="#4fd1e8" stroke-width="4" stroke-dasharray="5 4"/>
+          </svg>
+          <span>@company/sdk</span>
+        </div>
+
+        <div class="tiles">
+          <div class="tile"><b>.NET</b><span>dotnet</span><i>ready</i></div>
+          <div class="tile"><b>Java</b><span>jvm</span><i>ready</i></div>
+          <div class="tile"><b>PHP</b><span>php</span><i>ready</i></div>
+          <div class="tile"><b>Py</b><span>python</span><i>ready</i></div>
+          <div class="tile"><b>JS</b><span>node.js</span><i>ready</i></div>
+        </div>
+      </div>
+
+      <!-- C · pipelines -->
+      <div class="scene" id="sc-pipe">
+        <svg class="pipes" viewBox="0 0 900 420" aria-hidden="true">
+          <path class="pipe-bg" d="M40 300 H220 V140 H420 V300 H620 V140 H860"/>
+          <path class="pipe-in" d="M40 300 H220 V140 H420 V300 H620 V140 H860"/>
+          <path class="pipe-flow" d="M40 300 H220 V140 H420 V300 H620 V140 H860"/>
+
+          <g class="node n-commit" transform="translate(220 140)"><circle r="36"/><text y="-56">commit</text><g class="valve"><circle r="12"/><path d="M-12 0h24M0-12v24"/></g></g>
+          <g class="node n-build" transform="translate(420 300)"><circle r="36"/><text y="70">build</text><g class="valve"><circle r="12"/><path d="M-12 0h24M0-12v24"/></g></g>
+          <g class="node n-test" transform="translate(620 140)"><circle r="36"/><text y="-56">test</text><g class="valve"><circle r="12"/><path d="M-12 0h24M0-12v24"/></g></g>
+          <g class="node n-deploy" transform="translate(860 140)"><circle r="36"/><text y="-56">deploy</text><g class="valve"><circle r="12"/><path d="M-12 0h24M0-12v24"/></g></g>
+
+          <g class="wrench" transform="translate(420 300)">
+            <path d="M-22 -14 L-22 6 Q-30 18 -22 28 L-9 72 A9 9 0 0 0 9 72 L22 28 Q30 18 22 6 L22 -14 L13 -14 L13 6 Q0 14 -13 6 L-13 -14 Z" fill="#d7dde6" stroke="#0a0a0a" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="17" cy="24" r="5" fill="#8b96b5" stroke="#0a0a0a" stroke-width="2"/>
+          </g>
+
+          <g class="gauge" transform="translate(40 300)">
+            <circle r="40"/><path class="ticks" d="M-28-28l6 6M0-40v8M28-28l-6 6M-40 0h8M40 0h-8"/>
+            <line class="needle" x1="0" y1="0" x2="-33" y2="-3"/>
+            <circle r="4" class="pin"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- D · infrastructure -->
+      <div class="scene" id="sc-infra">
+        <div class="racks">
+          <div class="rack"></div><div class="rack"></div><div class="rack"></div>
+        </div>
+        <div class="chart win">
+          <div class="win-bar"><b></b><span>p95 latency</span></div>
+          <svg viewBox="0 0 320 160" aria-hidden="true">
+            <g class="grid"><line x1="0" y1="40" x2="320" y2="40"/><line x1="0" y1="80" x2="320" y2="80"/><line x1="0" y1="120" x2="320" y2="120"/></g>
+            <path class="lat-area" d="M0 40 C 60 30, 90 60, 130 55 S 190 95, 230 120 S 290 132, 320 134 V160 H0 Z"/>
+            <path class="lat-line" d="M0 40 C 60 30, 90 60, 130 55 S 190 95, 230 120 S 290 132, 320 134"/>
+          </svg>
+          <div class="chart-foot"><span>before</span><span>after</span></div>
+        </div>
+      </div>
+
+      <!-- E · API explorer -->
+      <div class="scene" id="sc-api">
+        <div class="explorer win">
+          <div class="win-bar"><b></b><span>API explorer</span></div>
+          <div class="ex-grid">
+            <aside>
+              <div class="ex-h">endpoints</div>
+              <div>/v1/expenses</div>
+              <div class="on">/v1/expenses/{id}</div>
+              <div>/v1/reports</div>
+              <div>/v1/webhooks</div>
+            </aside>
+            <div class="ex-main">
+              <div class="ex-url"><b>GET</b><span class="ex-path"><span class="typed">/v1/expenses/exp_8Kd2Qm?expand=receipt</span></span><button class="ex-send" type="button">Send</button></div>
+              <div class="ex-status"><b>200 OK</b><span>84 ms</span></div>
+<pre class="ex-res"><span>{</span>
+<span>  "id": "exp_8Kd2Qm",</span>
+<span>  "amount": 42.10,</span>
+<span>  "currency": "EUR",</span>
+<span>  "memo": "client lunch",</span>
+<span>  "receipt": { "url": "https://cdn/r.jpg" },</span>
+<span>  "posted_to": "erp/journal/1044"</span>
+<span>}</span></pre>
+              <div class="ex-chips"><span>copy as cURL</span><span>try in TS</span><span>try in Python</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- 05 · INSPIRATION -->
+<section class="chapter chapter--paper" id="quests" data-name="inspiration" data-hud="dark" style="--h:1650vh">
+  <div class="stage">
+
+    <!-- backdrop · space (rises over the paper) -->
+    <div class="bd bd-space" aria-hidden="true">
+      <div class="stars s1"><i></i></div>
+      <div class="stars s2"><i></i></div>
+      <div class="stars s3"><i></i></div>
+      <svg class="planet" viewBox="0 0 400 400">
+        <!-- a small moon on a slow orbit -->
+        <g class="moon" transform="translate(200 310)">
+          <circle r="10" fill="#efe9dc"/>
+          <circle cx="3" cy="-3" r="2.5" fill="#cfc7b6"/>
+        </g>
+        <g transform="rotate(-18 200 200)">
+          <ellipse cx="200" cy="200" rx="185" ry="42" fill="none" stroke="#f2c14e" stroke-width="12"/>
+          <ellipse cx="200" cy="200" rx="150" ry="32" fill="none" stroke="#efe9dc" stroke-width="3" opacity=".55"/>
+          <circle cx="200" cy="200" r="92" fill="#f28c38" stroke="#070b1a" stroke-width="4"/>
+          <clipPath id="disk"><circle cx="200" cy="200" r="90"/></clipPath>
+          <g clip-path="url(#disk)" fill="#c9672c">
+            <path d="M100 150 Q200 168 300 150 L300 164 Q200 182 100 164 Z"/>
+            <path d="M100 206 Q200 226 300 206 L300 230 Q200 250 100 230 Z"/>
+            <path d="M100 258 Q200 272 300 258 L300 266 Q200 280 100 266 Z"/>
+            <circle cx="238" cy="188" r="9"/>
+          </g>
+          <path d="M15 200 A185 42 0 0 0 385 200" fill="none" stroke="#f2c14e" stroke-width="12"/>
+          <path d="M50 200 A150 32 0 0 0 350 200" fill="none" stroke="#efe9dc" stroke-width="3" opacity=".55"/>
+        </g>
+      </svg>
+      <svg class="comet" viewBox="0 0 160 24" aria-hidden="true">
+        <path d="M150 12 C 120 5, 60 4, 0 12 C 60 20, 120 19, 150 12 Z" fill="#efe9dc" opacity=".55"/>
+        <circle cx="150" cy="12" r="6" fill="#efe9dc"/>
+      </svg>
+    </div>
+
+    <!-- backdrop · daylight (fades in as the water rises) -->
+    <div class="bd bd-day" aria-hidden="true"><i class="day-sun"></i></div>
+
+    <!-- backdrop · the sea, with the things on it (icons: Material Symbols, Apache 2.0) -->
+    <div class="bd bd-sea" aria-hidden="true">
+      <div class="sea-body"><i class="ripple" style="left:8vw;top:34%"></i><i class="ripple" style="left:30vw;top:58%"></i><i class="ripple" style="left:52vw;top:44%"></i><i class="ripple" style="left:70vw;top:72%"></i><i class="ripple" style="left:88vw;top:36%"></i></div>
+      <div class="wave w1"><svg viewBox="0 0 1200 48" preserveAspectRatio="none"><path d="M0 24 Q75 0 150 24 T300 24 T450 24 T600 24 T750 24 T900 24 T1050 24 T1200 24 V48 H0 Z"/></svg></div>
+      <div class="wave w2"><svg viewBox="0 0 1200 48" preserveAspectRatio="none"><path d="M0 24 Q75 0 150 24 T300 24 T450 24 T600 24 T750 24 T900 24 T1050 24 T1200 24 V48 H0 Z"/></svg></div>
+
+      <div class="sea-obj surfer"><div class="drag"><div class="bob">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M8.5 4l5.55 1.025q.35.05.675.275t.55.625l.875 1.55Q16.8 8.6 17.95 9.3t2.55.7v2q-1.95 0-3.55-.975t-2.525-2.55L12.175 10L16 13v3.85q.4.275.775.575T17.5 18q-.525.45-1.15.725T15 19H9q-.25 0-.488-.038t-.462-.112q-2.15-1.475-3.6-2.975T3 13.275q0-.775.6-1.025T4.85 12q.725 0 1.675.213t2.025.612l-.525-3.1q-.1-.5.113-.987T8.8 7.95l2.15-1.45q-.075 0-.362-.062t-.638-.125t-.637-.125t-.363-.063L6.125 8.05L5 6.4zm1.8 7.1l.45 2.65q.675.325 1.675.863T14 15.5V14zM17 5.5q-.825 0-1.412-.587T15 3.5t.588-1.412T17 1.5t1.413.588T19 3.5t-.587 1.413T17 5.5"/></svg>
+      </div></div></div>
+
+      <div class="sea-obj kayak"><div class="drag"><div class="bob">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 19Q4.5 19 0 17.5q1.35-.575 3.3-1.175t3.825-.9l1.35-4.175q.275-.85 1.038-1.125t1.437.075l2.55 1.3l2.825-1.5l1.65-3.7l-.5-1.325L18.8 2L22 3.425L20.675 6.4l-1.325.5l-3.7 8.35q2.325.275 4.662.95T24 17.5Q19.5 19 9 19m5.075-3.925l.95-2.125l-1.525.8l-1.75-.9l-.7 2.15H12q.525 0 1.05.013t1.025.062m-3.487-6.162Q10 8.325 10 7.5t.588-1.412T12 5.5t1.413.588T14 7.5t-.587 1.413T12 9.5t-1.412-.587"/></svg>
+      </div></div></div>
+
+      <div class="sea-obj sailor"><div class="drag"><div class="bob">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 13.5L11 2v11.5zm9.5 0q.3-.7.65-2.45t.35-3.55t-.337-3.7T12.5 1q1.525.45 3.038 1.675T18.261 5.6t1.975 3.738T21 13.5zM5 19Q2.7 17.7 2 15h20q-.7 2.7-3 4z"/></svg>
+      </div></div></div>
+
+      <div class="wave w3"><svg viewBox="0 0 1200 48" preserveAspectRatio="none"><path d="M0 24 Q75 0 150 24 T300 24 T450 24 T600 24 T750 24 T900 24 T1050 24 T1200 24 V48 H0 Z"/></svg></div>
+    </div>
+
+    <!-- beat 1 · the game -->
+    <div class="q-copy">
+      <h2>Inspi<span class="wide">ration.</span></h2>
+      <p class="lede">It started with a game I built for the company.</p>
+    </div>
+
+    <div class="fit" id="quest-fit">
+      <div class="lgc">
+        <div class="lgc-head"><span>company-wide World Cup prediction game</span><span class="lgc-tag">the spark</span></div>
+        <div class="lgc-body">
+          <div class="matches">
+            <div class="match"><span class="team">BRA</span><span class="score">2 : 1</span><span class="team">ARG</span><i class="pick">your pick 2:1, correct</i></div>
+            <div class="match"><span class="team">SRB</span><span class="score">1 : 0</span><span class="team">ESP</span><i class="pick">your pick 1:0, correct</i></div>
+            <div class="match"><span class="team">FRA</span><span class="score">- : -</span><span class="team">ENG</span><i class="pick pending">predict before kick-off</i></div>
+          </div>
+          <ol class="board">
+            <li data-name="Mark"><span class="pos">1</span><span class="who">Mark</span><span class="pts" data-to="42">0</span></li>
+            <li data-name="Anna"><span class="pos">2</span><span class="who">Anna</span><span class="pts" data-to="39">0</span></li>
+            <li data-name="Aleksa" class="me"><span class="pos">3</span><span class="who">Aleksa</span><span class="pts" data-to="47">0</span></li>
+            <li data-name="John"><span class="pos">4</span><span class="who">John</span><span class="pts" data-to="31">0</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="q-spark">
+      <p class="sp-line sp-1">The whole company played. <span class="wide">Nobody had to.</span></p>
+      <p class="sp-line sp-2">That was the <span class="wide">spark.</span></p>
+    </div>
+
+    <!-- beat 2 · spacegora -->
+    <div class="q-space">
+      <p class="qs-kicker">So I started building</p>
+      <h2 class="qs-name">space<span class="wide">gora</span><i class="qs-tag">in progress</i></h2>
+      <p class="qs-sub">A place for celebrating people's milestones without the noise. Less time and stress spent organizing all of it, more of the moment itself.</p>
+    </div>
+
+    <!-- beat 3 · the water -->
+    <div class="q-sea">
+      <p class="qw-kicker">And there's a second one.</p>
+      <h2 class="qw-name">On the <span class="wide">water.</span></h2>
+      <p class="qw-sub">For people exploring themselves and their passions, out on the water. Board, paddle, sail and much more. That one stays under wraps a little longer.</p>
+    </div>
+
+    <!-- beat 4 · the jump, then touchdown (typewriter, contact) -->
+    <div class="q-jump">
+      <p class="qj-line qj-1">But this can only touch people willing to explore and <span class="wide">make the jump.</span></p>
+      <p class="qj-line qj-2 type" aria-live="polite"><span class="type-text">I want to be part of something that motivates people to <span class="wide">make the jump.</span></span><i class="type-cursor"></i></p>
+      <div class="cta">
+        <a class="btn" href="mailto:aleksa.kekovic2002@gmail.com?subject=Job%20application%20response">say hi</a>
+      </div>
+      <p class="ps">P.S. I also think it's an interface problem.</p>
+    </div>
+
+    <!-- touchdown: the parachutist, from parachute.avif, tinted through a mask -->
+    <i class="chute" aria-hidden="true"></i>
+
+  </div>
+</section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="../js/main.js?v=18"></script>
+</body>
+</html>

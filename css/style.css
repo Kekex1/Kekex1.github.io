@@ -172,6 +172,9 @@ html.intro .hud>div,html.intro .hero-copy>*,html.intro .cloud{visibility:hidden}
 .card-drag.dragging .card-inner,.card-drag.dragging:hover .card-inner{transform:none;transition:transform .2s;transition-delay:0s}
 .card-drag.dragging figcaption{max-width:46px}
 .deck-hint{position:absolute;bottom:5vh;left:0;right:0;text-align:center;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:0;margin:0}
+.club-ast{font-size:.5em;color:var(--gold);vertical-align:top;line-height:1}
+.deck-note{position:absolute;top:5vh;left:0;right:0;text-align:center;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:0;margin:0;z-index:5}
+.deck-note sup{color:var(--gold);font-size:1em;vertical-align:baseline;margin-right:.2em}
 
 /* 03 · ink */
 .craft-intro{position:absolute;z-index:2;text-align:center;margin:0;padding:0 6vw}

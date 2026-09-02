@@ -249,9 +249,10 @@ const chapter = (id, extra = {}) => gsap.timeline({
       .fromTo($('.card-drag', c), { rotation: p.r * 6 }, { rotation: p.r, duration: 0.7, ease: 'power3.out' }, 2.9 + i * 0.15);
   });
   tl.fromTo('.deck-hint', { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3 }, 3.7)
+    .fromTo('.deck-note', { autoAlpha: 0, y: -8 }, { autoAlpha: 1, y: 0, duration: 0.3 }, 3.8)   // the asterisk from the last line, explained
     .to({}, { duration: 1.2 }) // hold
     .to(cards, { y: '-120vh', duration: 0.6, stagger: 0.06, ease: 'power2.in' }, 5.0)
-    .to('.deck-hint', { autoAlpha: 0, duration: 0.2 }, 5.0);
+    .to('.deck-hint, .deck-note', { autoAlpha: 0, duration: 0.2 }, 5.0);
 
   // click and hold to move a screen around
   Draggable.create('.card-drag', {

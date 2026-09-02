@@ -385,7 +385,9 @@ html.intro .hud>div,html.intro .hero-copy>*,html.intro .cloud{visibility:hidden}
 /* contact */
 .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:2.2rem}
 .btn{display:inline-block;padding:.9rem 1.5rem;background:#fff;color:#111;text-decoration:none;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;border:2px solid #111;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
-.q-jump .btn{padding:1.15rem 2.2rem;font-size:1rem}
+.q-jump .btn{padding:1.5rem 3.2rem;font-size:1.35rem;letter-spacing:.1em;box-shadow:8px 8px 0 #101010}
+.q-jump .btn:hover{box-shadow:5px 5px 0 #101010}
+.q-jump .btn:active{box-shadow:0 0 0 #101010;transform:translate(8px,8px)}
 .btn:hover{transform:translate(2px,2px);box-shadow:4px 4px 0 #101010}
 .btn:active{transform:translate(6px,6px);box-shadow:0 0 0 #101010}
 .ps{margin-top:3rem;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
